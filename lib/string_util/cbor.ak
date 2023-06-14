@@ -17,16 +17,18 @@ pub fn serialise_to_hex(data: Data) -> String {
 /// print("Redeemer", 24) // Redeemer: "1818"
 /// ```
 pub fn print(label: ByteArray, data: Data) -> String {
-  [
-    label
-      |> bytearray.to_string,
-    @": ",
-    #"22"
-      |> bytearray.to_string,
-    data
-      |> serialise_to_hex,
-    #"22"
-      |> bytearray.to_string,
-  ]
-    |> string.join(@"")
+  string.join(
+    [
+      label
+        |> bytearray.to_string,
+      @": ",
+      #"22"
+        |> bytearray.to_string,
+      data
+        |> serialise_to_hex,
+      #"22"
+        |> bytearray.to_string,
+    ],
+    @"",
+  )
 }
