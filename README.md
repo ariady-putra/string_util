@@ -6,7 +6,8 @@ For example,
 
 ```gleam
 use string_util/cbor.{print}
-
+```
+```gleam
 test should_unlock() {
 
     // arrange:
@@ -26,7 +27,7 @@ test should_unlock() {
 
 will give something like:
 
-```
+```gleam
     ┍━ lock_unlock/tests ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     │ PASS [mem: ####, cpu: ######] should_unlock
     │ ↳ Datum: "182a"
