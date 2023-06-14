@@ -1,0 +1,14 @@
+name = "ariady-putra/string_util"
+version = "0.0.0"
+license = "Apache-2.0"
+description = "An Aiken utility library to pretty-print data"
+
+[repository]
+user = "ariady-putra"
+project = "string_util"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "main"
+source = "github"
