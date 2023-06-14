@@ -5,6 +5,8 @@ A utility library to pretty-print data, useful for tracing.
 For example,
 
 ```gleam
+use string_util/cbor.{print}
+
 test should_unlock() {
 
     // arrange:
