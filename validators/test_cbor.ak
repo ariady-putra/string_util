@@ -1,6 +1,6 @@
 //// ```
-//// ┍━ test_cbor ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-//// │ PASS [mem: ####, cpu: ######] print_cbor_hex
+//// ┍━ test_cbor ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+//// │ PASS [mem: 1459929, cpu: 831702953] print_cbor_hex
 //// │ ↳ Hello world!: "4c48656c6c6f20776f726c6421"
 //// │ ↳ ABC: "43414243"
 //// │ ↳ 42: "182a"
@@ -16,7 +16,7 @@
 //// │ ↳ (True, False): "9fd87a80d87980ff"
 //// │ ↳ [True, False]: "9fd87a80d87980ff"
 //// │ ↳ [(True, False)]: "a1d87a80d87980"
-//// ┕━━━━━━━━━━━━━━━━━━━━━━━ 1 tests | 1 passed | 0 failed
+//// ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1 tests | 1 passed | 0 failed
 //// ```
 
 use string_util/cbor.{print}
