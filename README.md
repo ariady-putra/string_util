@@ -2,7 +2,15 @@
 
 A utility library to pretty-print data, useful for tracing.
 
-For example,
+| ℹ️ | Package name and version | aiken-extra/string_util v2.130.1011-alpha | ✔️ |
+|----|--------------------------|-------------------------------------------|---|
+| 🟢 | **Depends on**           | **aiken-lang/stdlib v1.3.0**              | ✔️ |
+| 🟢 | **Compatible with**      | **aiken v1.0.11-alpha**                   | ✔️ |
+| ⚠️ | **Incompatible with**     | **aiken v1.0.12-alpha**[^x]              | ❌ |
+[^x]: Some issues with `trace`, `todo`, and `error`/`fail` (<https://github.com/aiken-lang/aiken/issues/675>)
+
+## Usage Example
+
 ```gleam
 use string_util/cbor.{print}
 ```
@@ -23,7 +31,8 @@ test should_unlock() {
     unlock(datum, redeemer, 42)
 }
 ```
-will give something like:
+
+will give something like,
 ```gleam
     ┍━ lock_unlock/tests ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     │ PASS [mem: ####, cpu: ######] should_unlock
