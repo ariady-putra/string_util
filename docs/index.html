@@ -7,8 +7,8 @@
     <meta name="theme-color" content="#eff1f5" media="(prefers-color-scheme: light)"/>
     <meta name="theme-color" content="#1e1e2e" media="(prefers-color-scheme: dark)"/>
     <link rel="icon" type="image/svg+xml" sizes="any" href="./favicon.svg"/>
-    <link rel="stylesheet" href="./css/index.css?v=1.0.11-alpha" type="text/css"/>
-    <link id="syntax-theme" rel="stylesheet" href="./css/atom-one-light.min.css?v=1.0.11-alpha"/>
+    <link rel="stylesheet" href="./css/index.css?v=1.0.13-alpha" type="text/css"/>
+    <link id="syntax-theme" rel="stylesheet" href="./css/atom-one-light.min.css?v=1.0.13-alpha"/>
   </head>
   <body class="prewrap-off theme-light drawer-closed">
     <script>
@@ -120,13 +120,13 @@
       <h2>
         <a href="./">string_util</a>
         <span id="project-version">
-          <span>v2.130.1011-alpha </span>
+          <span>v2.130.1013-alpha </span>
         </span>
         <script>
           "use strict";
 
           if ("undefined" !== typeof versionNodes) {
-            const currentVersion = "v2.130.1011-alpha";
+            const currentVersion = "v2.130.1013-alpha";
             if (! versionNodes.find(element => element.version === currentVersion)) {
               versionNodes.unshift({ version: currentVersion, url: "#" });
             }
@@ -223,10 +223,9 @@
         
 <h1>string_util</h1>
 <p>A utility library to pretty-print data, useful for tracing.</p>
-<table><thead><tr><th>ℹ️</th><th>Package name and version</th><th>aiken-extra/string_util v2.130.1011-alpha</th><th>🧪</th></tr></thead><tbody>
+<table><thead><tr><th>ℹ️</th><th>Package info</th><th>aiken-extra/string_util v2.130.1013-alpha</th><th>🧪</th></tr></thead><tbody>
 <tr><td>🟢</td><td><strong>Depends on</strong></td><td><strong>aiken-lang/stdlib v1.3.0</strong></td><td>✔️</td></tr>
-<tr><td>🟢</td><td><strong>Compatible with</strong></td><td><strong>aiken v1.0.11-alpha</strong></td><td>✔️</td></tr>
-<tr><td>⚠️</td><td><strong>Incompatible with</strong></td><td><strong>aiken v1.0.12-alpha</strong><sup class="footnote-reference"><a href="#x">1</a></sup></td><td>❌</td></tr>
+<tr><td>🟢</td><td><strong>Tested with</strong></td><td><strong>aiken v1.0.13-alpha</strong></td><td>✔️</td></tr>
 </tbody></table>
 <h2>Usage Example</h2>
 <pre><code>use string_util/cbor.{print}
@@ -238,10 +237,8 @@ test should_unlock() {
     let redeemer = redeemer.new(42)
 
     // trace:
-    trace &quot;Datum&quot;
-        |&gt; print(datum)
-    trace &quot;Redeemer&quot;
-        |&gt; print(redeemer)
+    trace print(&quot;Datum&quot;, datum)
+    trace print(&quot;Redeemer&quot;, redeemer)
 
     // assert:
     unlock(datum, redeemer, 42)
@@ -257,10 +254,6 @@ test should_unlock() {
     │ ↳ Redeemer: &quot;1818&quot;
     ┕━━━━━━━━━━━━━━━━━━━━━━ 2 tests | 2 passed | 0 failed
 </code></pre>
-<hr />
-<div class="footnote-definition" id="x"><sup class="footnote-definition-label">1</sup>
-<p>Some issues with <code>trace</code>, <code>todo</code>, and <code>error</code>/<code>fail</code> (<a href="https://github.com/aiken-lang/aiken/issues/675">https://github.com/aiken-lang/aiken/issues/675</a>)</p>
-</div>
 
 
       </main>
@@ -312,8 +305,8 @@ test should_unlock() {
       </defs>
     </svg>
 
-    <script src="./js/highlight.min.js?v=1.0.11-alpha"></script>
-    <script src="./js/highlightjs-aiken.js?v=1.0.11-alpha"></script>
+    <script src="./js/highlight.min.js?v=1.0.13-alpha"></script>
+    <script src="./js/highlightjs-aiken.js?v=1.0.13-alpha"></script>
     <script>
       document.querySelectorAll("pre code").forEach((elem) => {
         if (elem.className === "") {
@@ -332,9 +325,9 @@ test should_unlock() {
 	el.prepend(a);
       });
     </script>
-    <script src="./js/lunr.min.js?v=1.0.11-alpha"></script>
-    <script src="./js/index.js?v=1689404118"></script>
+    <script src="./js/lunr.min.js?v=1.0.13-alpha"></script>
+    <script src="./js/index.js?v=1689511566"></script>
     <!-- Load the search index using JSONP to avoid CORS issues -->
-    <script src="./search-data.js?v=1689404118"></script>
+    <script src="./search-data.js?v=1689511566"></script>
   </body>
 </html>

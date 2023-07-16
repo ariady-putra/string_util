@@ -9,11 +9,9 @@
 use string_util/bytes.{print}
 
 test print_bytes_to_hex() {
-  trace "Hello world!"
-    |> print("Hello world!")
+  trace print("Hello world!", "Hello world!")
   //
-  trace "ABC"
-    |> print(#"414243")
+  trace print("ABC", #"414243")
   //
   True
 }
