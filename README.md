@@ -2,12 +2,10 @@
 
 A utility library to pretty-print data, useful for tracing.
 
-| ℹ️ | Package name and version | aiken-extra/string_util v2.130.1011-alpha | ✔️ |
-|----|--------------------------|-------------------------------------------|---|
-| 🟢 | **Depends on**           | **aiken-lang/stdlib v1.3.0**              | ✔️ |
-| 🟢 | **Compatible with**      | **aiken v1.0.11-alpha**                   | ✔️ |
-| ⚠️ | **Incompatible with**     | **aiken v1.0.12-alpha**[^x]              | ❌ |
-[^x]: Some issues with `trace`, `todo`, and `error`/`fail` (<https://github.com/aiken-lang/aiken/issues/675>)
+| ℹ️ | Package info    | aiken-extra/string_util v2.130.1013-alpha | 🧪 |
+|----|-----------------|-------------------------------------------|----|
+| 🟢 | **Depends on**  | **aiken-lang/stdlib v1.3.0**               | ✔️ |
+| 🟢 | **Tested with** | **aiken v1.0.13-alpha**                    | ✔️ |
 
 ## Usage Example
 
@@ -22,16 +20,13 @@ test should_unlock() {
     let redeemer = redeemer.new(42)
 
     // trace:
-    trace "Datum"
-        |> print(datum)
-    trace "Redeemer"
-        |> print(redeemer)
+    trace print("Datum", datum)
+    trace print("Redeemer", redeemer)
 
     // assert:
     unlock(datum, redeemer, 42)
 }
 ```
-
 will give something like,
 ```gleam
     ┍━ lock_unlock/tests ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
