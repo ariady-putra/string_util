@@ -22,50 +22,35 @@
 use string_util/cbor.{print}
 
 test print_cbor_hex() {
-  trace "Hello world!"
-    |> print("Hello world!")
+  trace print("Hello world!", "Hello world!")
   //
-  trace "ABC"
-    |> print(#"414243")
+  trace print("ABC", #"414243")
   //
-  trace "42"
-    |> print(42)
+  trace print("42", 42)
   //
-  trace "[]"
-    |> print([])
+  trace print("[]", [])
   //
-  trace "[foo, bar]"
-    |> print(["foo", "bar"])
+  trace print("[foo, bar]", ["foo", "bar"])
   //
-  trace "(1, 2)"
-    |> print((1, 2))
+  trace print("(1, 2)", (1, 2))
   //
-  trace "[(1, ABC)]"
-    |> print([(1, "ABC")])
+  trace print("[(1, ABC)]", [(1, "ABC")])
   //
-  trace "[(1, 250), (2, 200), (3, 300)]"
-    |> print([(1, 250), (2, 200), (3, 300)])
+  trace print("[(1, 250), (2, 200), (3, 300)]", [(1, 250), (2, 200), (3, 300)])
   //
-  trace "Some(None)"
-    |> print(Some(None))
+  trace print("Some(None)", Some(None))
   //
-  trace "None"
-    |> print(None)
+  trace print("None", None)
   //
-  trace "True"
-    |> print(True)
+  trace print("True", True)
   //
-  trace "False"
-    |> print(False)
+  trace print("False", False)
   //
-  trace "(True, False)"
-    |> print((True, False))
+  trace print("(True, False)", (True, False))
   //
-  trace "[True, False]"
-    |> print([True, False])
+  trace print("[True, False]", [True, False])
   //
-  trace "[(True, False)]"
-    |> print([(True, False)])
+  trace print("[(True, False)]", [(True, False)])
   //
   True
 }
