@@ -2,17 +2,16 @@
 
 A utility library to pretty-print data, useful for tracing.
 
-| ℹ️ | Package info    | aiken-extra/string_util v2.140.1013-alpha | 🧪 |
-|----|-----------------|-------------------------------------------|----|
-| 🟢 | **Depends on**  | **aiken-lang/stdlib v1.4.0**               | ✔️ |
-| 🟢 | **Tested with** | **aiken v1.0.13-alpha**                    | ✔️ |
+| ℹ️ | Package info    | aiken-extra/string_util v2.140.202308 | 🪲 |
+|----|-----------------|---|---|
+| 🟢 | **Depends on**  | **aiken-lang/stdlib v1.4.0** | ✔️ |
+| 🟢 | **Tested with** | **[4a1ae9f412](https://github.com/aiken-lang/aiken/tree/4a1ae9f412041b573506084411bdedf50ed21f30)** | ✔️ |
 
 ## Usage Example
 
-```gleam
-use string_util/cbor.{print}
 ```
-```gleam
+use string_util/cbor.{print}
+
 test should_unlock() {
 
     // arrange:
@@ -28,7 +27,7 @@ test should_unlock() {
 }
 ```
 will give something like,
-```gleam
+```
     ┍━ lock_unlock/tests ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     │ PASS [mem: ####, cpu: ######] should_unlock
     │ ↳ Datum: "182a"
