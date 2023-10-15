@@ -2,10 +2,10 @@
 
 A utility library to pretty-print data, useful for tracing.
 
-| ℹ️  | Package info    | aiken-extra/string_util v3.160.202309                                                               | 🪲  |
+| ℹ️  | Package info    | aiken-extra/string_util v3.160.202310                                                               | 🪲  |
 | --- | --------------- | --------------------------------------------------------------------------------------------------- | --- |
 | 🟢  | **Depends on**  | **aiken-lang/stdlib v1.6.0**                                                                        | ✔️  |
-| 🟢  | **Tested with** | **[f379039efc](https://github.com/aiken-lang/aiken/tree/f379039efcdacff91121eb1e953b7d0c5782519e)** | ✔️  |
+| 🟢  | **Tested with** | **[10b9dc2042](https://github.com/aiken-lang/aiken/tree/10b9dc204257328b758692d9c714b576d3b0a1dc)** | ✔️  |
 
 ## Usage Example
 

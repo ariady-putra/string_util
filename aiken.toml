@@ -1,5 +1,5 @@
 name = "aiken-extra/string_util"
-version = "3.160.202309"
+version = "3.160.202310"
 license = "Apache-2.0"
 description = "An Aiken utility library to pretty-print data"
 
