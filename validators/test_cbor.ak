@@ -1,6 +1,6 @@
 //// ```
 //// ┍━ test_cbor ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-//// │ PASS [mem: 1428219, cpu: 823334304] print_cbor_hex
+//// │ PASS [mem: 1419219, cpu: 821264304] print_cbor_hex
 //// │ ↳ Hello world!: "4c48656c6c6f20776f726c6421"
 //// │ ↳ ABC: "43414243"
 //// │ ↳ 42: "182a"
@@ -23,34 +23,19 @@ use string_util/cbor.{print}
 
 test print_cbor_hex() {
   trace print("Hello world!", "Hello world!")
-  //
   trace print("ABC", #"414243")
-  //
   trace print("42", 42)
-  //
   trace print("[]", [])
-  //
   trace print("[foo, bar]", ["foo", "bar"])
-  //
   trace print("(1, 2)", (1, 2))
-  //
   trace print("[(1, ABC)]", [(1, "ABC")])
-  //
   trace print("[(1, 250), (2, 200), (3, 300)]", [(1, 250), (2, 200), (3, 300)])
-  //
   trace print("Some(None)", Some(None))
-  //
   trace print("None", None)
-  //
   trace print("True", True)
-  //
   trace print("False", False)
-  //
   trace print("(True, False)", (True, False))
-  //
   trace print("[True, False]", [True, False])
-  //
   trace print("[(True, False)]", [(True, False)])
-  //
   True
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>aiken-extra/string_util</title>
+    <title>test_integer - aiken-extra/string_util</title>
     <meta name="theme-color" content="#eff1f5" media="(prefers-color-scheme: light)"/>
     <meta name="theme-color" content="#1e1e2e" media="(prefers-color-scheme: dark)"/>
     <link rel="icon" type="image/svg+xml" sizes="any" href="./favicon.svg"/>
@@ -222,50 +222,37 @@
         
 	  <li><a href="./test_integer.html">
 	  
-	  test_integer
+	  <strong>test_integer</strong>
 	  
 	  </a></li>
         
         </ul>
 
         
+
+
+
+
+
+
       </nav>
 
       <main class="content">
         
-<h1>string_util</h1>
-<p>A utility library to pretty-print data, useful for tracing.</p>
-<table><thead><tr><th>ℹ️</th><th>Package info</th><th>aiken-extra/string_util v3.160.202310</th><th>🪲</th></tr></thead><tbody>
-<tr><td>🟢</td><td><strong>Depends on</strong></td><td><strong>aiken-lang/stdlib v1.6.0</strong></td><td>✔️</td></tr>
-<tr><td>🟢</td><td><strong>Tested with</strong></td><td><strong><a href="https://github.com/aiken-lang/aiken/tree/10b9dc204257328b758692d9c714b576d3b0a1dc">10b9dc2042</a></strong></td><td>✔️</td></tr>
-</tbody></table>
-<h2>Usage Example</h2>
-<pre><code class="language-gleam">use string_util/cbor.{print}
+<h1 id="module-name" class="module-name">
+  <a href="#module-name">test_integer</a>
+</h1>
+<pre><code>┍━ test_integer ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PASS [mem:   44115, cpu:  19919424] print_integer
+│ ↳ Deadline: 42
+┕━━━━━━━━━━━━━━━━━━━━ 1 tests | 1 passed | 0 failed
 </code></pre>
-<pre><code class="language-gleam">test should_unlock() {
 
-    // arrange:
-    let datum = datum.new(42)
-    let redeemer = redeemer.new(42)
 
-    // trace:
-    trace print(&quot;Datum&quot;, datum)
-    trace print(&quot;Redeemer&quot;, redeemer)
 
-    // assert:
-    unlock(datum, redeemer, 42)
-}
-</code></pre>
-<p>will give something like,</p>
-<pre><code class="language-gleam">    ┍━ lock_unlock/tests ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    │ PASS [mem: ####, cpu: ######] should_unlock
-    │ ↳ Datum: &quot;182a&quot;
-    │ ↳ Redeemer: &quot;182a&quot;
-    │ PASS [mem: ####, cpu: ######] should_not_unlock
-    │ ↳ Datum: &quot;182a&quot;
-    │ ↳ Redeemer: &quot;1818&quot;
-    ┕━━━━━━━━━━━━━━━━━━━━━━ 2 tests | 2 passed | 0 failed
-</code></pre>
+
+
+
 
 
       </main>
