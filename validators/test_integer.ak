@@ -1,6 +1,6 @@
 //// ```
 //// ┍━ test_integer ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-//// │ PASS [mem:   41183, cpu:  19251424] print_integer
+//// │ PASS [mem:   41783, cpu:  19389424] print_integer
 //// │ · with traces
 //// │ | Deadline: 42
 //// ┕━━━━━━━━━━━━━━━━━━━━ 1 tests | 1 passed | 0 failed

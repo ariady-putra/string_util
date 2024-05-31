@@ -1,5 +1,5 @@
 name = "aiken-extra/string_util"
-version = "3.180.202403"
+version = "3.190.202405"
 license = "Apache-2.0"
 description = "An Aiken utility library to pretty-print data"
 
@@ -10,5 +10,5 @@ platform = "github"
 
 [[dependencies]]
 name = "aiken-lang/stdlib"
-version = "1.8.0"
+version = "1.9.0"
 source = "github"
