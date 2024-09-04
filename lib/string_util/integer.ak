@@ -1,5 +1,5 @@
-use aiken/bytearray.{to_string}
-use aiken/string.{from_int, join}
+use aiken/primitive/bytearray.{to_string}
+use aiken/primitive/string.{from_int, join}
 
 /// ```
 /// print("Deadline", 42) // Deadline: 42

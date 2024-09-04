@@ -1,6 +1,6 @@
-use aiken/bytearray
 use aiken/cbor
-use aiken/string
+use aiken/primitive/bytearray
+use aiken/primitive/string
 
 /// ```
 /// serialise_to_hex(42) // 182a
