@@ -1,5 +1,5 @@
-use aiken/bytearray.{to_hex, to_string}
-use aiken/string.{join}
+use aiken/primitive/bytearray.{to_hex, to_string}
+use aiken/primitive/string.{join}
 
 /// ```
 /// print("Hello world!", "Hello world!") // Hello world!: "48656c6c6f20776f726c6421"
